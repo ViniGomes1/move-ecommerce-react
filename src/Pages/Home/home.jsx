@@ -8,9 +8,9 @@ import ProductGrid from "../../Components/ProductGrid/ProductGrid"
 function Home() {
 
     const imagens = [
-        "src/assets/Imagens/cara com corda.jpg",
-        "src/assets/Imagens/academia.jpg",
-        "src/assets/Imagens/imagem-base.jpg"
+        "/Imagens/Carrossel/cara com corda.jpg",
+        "/Imagens/Carrossel/academia.jpg",
+        "/Imagens/Carrossel/imagem-base.jpg"
     ]
 
     return (

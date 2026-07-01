@@ -4,26 +4,26 @@ import CardProduct from "../CardProduct/CardProduct";
 
 const imagensGrid = [
     {
-        product: "src/assets/Imagens/grid/Dunk/01708551A2.avif",
-        image: "src/assets/Imagens/grid/Dunk/01708551A3.jpeg",
+        product: "/Imagens/grid/Dunk/01708551A2.avif",
+        image: "/Imagens/grid/Dunk/01708551A3.jpeg",
         price: "299",
         name: "Tênis"
     },
     {
-        product: "src/assets/Imagens/grid/Camisa/Modelo.jpeg",
-        image: "src/assets/Imagens/grid/Camisa/persona.avif",
+        product: "/Imagens/grid/Camisa/Modelo.jpeg",
+        image: "/Imagens/grid/Camisa/persona.avif",
         price: "299",
         name: "Camisa do Brasil"
     },
     {
-        product: "src/assets/Imagens/grid/Camisa Branca/modelo.avif",
-        image: "src/assets/Imagens/grid/Camisa Branca/persona.avif",
+        product: "/Imagens/grid/Camisa Branca/modelo.avif",
+        image: "/Imagens/grid/Camisa Branca/persona.avif",
         price: "299",
         name: "Camisa Branca"
     },
     {
-        product: "src/assets/Imagens/grid/mochila/modelo.avif",
-        image: "src/assets/Imagens/grid/mochila/persona.avif",
+        product: "/Imagens/grid/mochila/modelo.avif",
+        image: "/Imagens/grid/mochila/persona.avif",
         price: "299",
         name: "Mochila"
     }

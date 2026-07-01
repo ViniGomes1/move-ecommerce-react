@@ -8,7 +8,17 @@ const filterParams = [
             { nameFilter: "Roupas Femininas" },
             { nameFilter: "Roupas Masculinas" }
         ]
-    }
+    },
+    {
+        nameContent: "Categoria",
+        filterList: [
+            { nameFilter: "Blusas" },
+            { nameFilter: "Tops" },
+            { nameFilter: "Legging" },
+            { nameFilter: "Moletom" },
+            { nameFilter: "Shorts" }
+        ]
+    },
 ]
 
 function SideBar() {
