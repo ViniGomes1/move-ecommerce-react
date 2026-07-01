@@ -1,10 +1,10 @@
 import "./ShopEnviroment.css"
 
-function ShopEnviroment(){
+function ShopEnviroment({produtos}){
     return(
         <div className="shop-container">
             <h1>ROUPAS NO GERAL</h1>
-            <h3>3 Produtos</h3>
+            <h3>{produtos} Produtos</h3>
         </div>
     )
 }

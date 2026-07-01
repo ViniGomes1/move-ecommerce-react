@@ -3,14 +3,18 @@ import SideBar from "../../Components/SideBar/SideBar"
 import ShopEnviroment from "../../Components/ShopEnviroment/ShopEnviroment"
 import "./Shop.css"
 import GridShopProducts from "../../Components/GridShopProducts/GridShopProducts"
+import { useState } from "react"
 
 function Shop() {
+
+    const [quantidade, setQuantidade] = useState()
+
     return (
         <div>
-            <ShopEnviroment />
+            <ShopEnviroment produtos={quantidade}/>
             <div className="shop-content-container">
                 <SideBar />
-                <GridShopProducts />
+                <GridShopProducts onValue={setQuantidade}/>
             </div>
         </div>
     )
