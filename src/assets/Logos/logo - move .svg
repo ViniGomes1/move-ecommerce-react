@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Fundo opcional cinza claro idêntico à imagem (remova se quiser transparente) -->
+  <!-- Logo centralizada -->
+  <g transform="translate(105, 95)" fill="#143028">
+    <!-- Cada retângulo representa um braço rotacionado a cada 72º -->
+    <rect x="-18" y="-15" width="36" height="75" transform="rotate(0)" />
+    <rect x="-18" y="-15" width="36" height="75" transform="rotate(72)" />
+    <rect x="-18" y="-15" width="36" height="75" transform="rotate(144)" />
+    <rect x="-18" y="-15" width="36" height="75" transform="rotate(216)" />
+    <rect x="-18" y="-15" width="36" height="75" transform="rotate(288)" />
+  </g>
+</svg>

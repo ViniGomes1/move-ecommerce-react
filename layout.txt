@@ -1,0 +1,15 @@
+Tela Inicial
+Cor de Fundo: #DAE1DE 
+Cor dos textos: #15342d
+
+inspirações a eventos:
+https://www.aloyoga.com.br/
+https://satisfyrunning.com/
+https://pasnormalstudios.com/eu/ride?tag=socialride
+
+Banco de fotos:
+https://unsplash.com/pt-br/
+
+
+Base:
+https://design.penpot.app/#/workspace?team-id=974ae998-b937-80f4-8008-3da16b5b09ad&file-id=974ae998-b937-80f4-8008-3da1b5323567&page-id=974ae998-b937-80f4-8008-3da1b5323568

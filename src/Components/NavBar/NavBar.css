@@ -1,0 +1,73 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(218, 225, 222, 0.300);
+    padding: 20px 30px;
+    z-index: 1000;
+}
+
+.navbarcontent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 100%;
+}
+/*/box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo p {
+    color: #15342d;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.logo img{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    letter-spacing: 4.2px;
+}
+
+.nav-links a {
+    color: #183a33;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #183a3386;
+}
+
+/* Conteúdo demonstrativo apenas para gerar rolagem na tela */
+.conteudo {
+    padding: 40px;
+    line-height: 1.6;
+    background: #f4f4f4;
+    height: 2000px;
+    /* Altura grande para testar o scroll */
+}
+
+.nav-logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-logos img{
+    width: 26px;
+    height: 26px;
+}

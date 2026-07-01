@@ -1,0 +1,17 @@
+project-root/
+├── public/              # Arquivos estáticos (favicon, robots.txt, imagens públicas)
+├── src/
+│   ├── assets/          # Imagens, ícones, fontes
+│   ├── components/      # Componentes reutilizáveis (botões, modais, inputs)
+│   ├── features/        # Módulos de domínio (auth, dashboard, profile)
+│   ├── pages/           # Páginas ligadas ao roteamento (Home, Login, etc.)
+│   ├── hooks/           # Custom hooks (useAuth, useDebounce)
+│   ├── utils/           # Funções utilitárias puras (formatDate, generateId)
+│   ├── lib/             # Configurações de libs externas (axios, firebase)
+│   ├── styles/          # CSS global, temas
+│   ├── router/          # Configuração de rotas
+│   ├── App.jsx          # Composição principal
+│   └── main.jsx         # Ponto de entrada
+├── index.html
+├── vite.config.js
+└── package.json

@@ -1,0 +1,10 @@
+.grid-shop-container-products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-shop-container-products .card-container{
+    width: 300px;
+    height: 400px;
+}
