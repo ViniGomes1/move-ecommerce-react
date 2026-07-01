@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./ProductGrid.css"
 import CardProduct from "../CardProduct/CardProduct";
 
@@ -26,21 +26,48 @@ const imagensGrid = [
         image: "/Imagens/grid/mochila/persona.avif",
         price: "299",
         name: "Mochila"
+    },
+    {
+        product: "/Imagens/grid/Boné/produto.webp",
+        image: "/Imagens/grid/Boné/persona.webp",
+        price: "399",
+        name: "Viseira"
     }
 ]
 
-console.log(imagensGrid)
-
 const esperarDoisSegundos = () => new Promise(resolve => setTimeout(resolve, 2000));
+
 
 
 function ProductGrid() {
     const [imagemAtual, setImagemAtual] = useState(imagensGrid[0].image);
     const [estaPorCima, setEstaPorCima] = useState(false);
 
+    const cardGridRef = useRef(null);
+
+    useEffect(() => {
+        const container = cardGridRef.current;
+        if (!container) return;
+
+        const handleWheel = (evento) => {
+            evento.preventDefault();
+            container.scrollLeft += evento.deltaY;
+        };
+
+        container.addEventListener('wheel', handleWheel, { passive: false });
+
+        return () => {
+            container.removeEventListener('wheel', handleWheel);
+        };
+
+    }, [])
+
     return (
         <div className="product-grid-container">
-            <div className="card-grid">
+            <div className="top-title">
+                <h1>NOVIDADES</h1>
+            </div>
+            <div ref={cardGridRef} className="card-grid">
                 {imagensGrid.map((imagem, index) => {
                     return (
                         <CardProduct

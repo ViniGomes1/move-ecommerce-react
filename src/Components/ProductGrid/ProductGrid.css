@@ -1,7 +1,23 @@
 .card-grid {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    overflow: auto;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.top-title{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-title h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #15342d;
 }
 
 .bottom-button {
@@ -11,11 +27,11 @@
     margin-bottom: 20px;
 }
 
-.bottom-button div:hover{
+.bottom-button div:hover {
     cursor: pointer;
 }
 
-.bottom-button div{
+.bottom-button div {
     background-color: #000000;
     width: 120px;
     height: 40px;
@@ -26,7 +42,7 @@
     justify-content: center;
 }
 
-.bottom-button div a{
+.bottom-button div a {
     color: aliceblue;
     text-align: center;
     font-weight: 700;
