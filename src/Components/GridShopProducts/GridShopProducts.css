@@ -1,7 +1,7 @@
 .grid-shop-container-products{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .grid-shop-container-products .card-container{

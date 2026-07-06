@@ -19,6 +19,31 @@ const gridProducts = [
         name: "Camisa Moletom",
         price: "599",
         src: "/Imagens/Products/camisa moletom.jpg"
+    },
+    {
+        name: "Camisa Moletom",
+        price: "599",
+        src: "/Imagens/Products/camisa moletom.jpg"
+    },
+    {
+        name: "Camisa Moletom",
+        price: "599",
+        src: "/Imagens/Products/camisa moletom.jpg"
+    },
+    {
+        name: "Camisa Moletom",
+        price: "599",
+        src: "/Imagens/Products/camisa moletom.jpg"
+    },
+    {
+        name: "Camisa Moletom",
+        price: "599",
+        src: "/Imagens/Products/camisa moletom.jpg"
+    },
+    {
+        name: "Camisa Moletom",
+        price: "599",
+        src: "/Imagens/Products/camisa moletom.jpg"
     }
 ]
 

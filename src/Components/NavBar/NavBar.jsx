@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 
 const navbarLinks = {
   shop: {to: "/shop"},
-  home: {to: "/"}
+  home: {to: "/"},
+  events: {to: "/events"}
 }
 
 function NavBar() {
@@ -20,7 +21,7 @@ function NavBar() {
         </Link>
         <ul className="nav-links">
           <li><Link to={navbarLinks.shop.to}>LOJA</Link></li>
-          <li><a href="">EVENTOS</a></li>
+          <li><Link to={navbarLinks.events.to}>EVENTOS</Link></li>
         </ul>
         <ul className="nav-logos">
           <li><a href=""><img src={person}/></a></li>
