@@ -1,0 +1,20 @@
+.error-page-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.error-page-container img{
+    width: 200px;
+    height: 200px;
+}
+.error-page-container h1{
+    font-size: 40px;
+    color: #15342d;
+}
+.error-page-container h2{
+    font-size: 20px;
+    color: #15342d;
+}

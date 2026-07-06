@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home/home.jsx'
 import Shop from './Pages/Shop/Shop.jsx'
+import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx'
 //import RouterPages from './RouterPages.jsx'
 
 
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -24,6 +26,7 @@ const router = createBrowserRouter([
     ]
   }
 ])
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
