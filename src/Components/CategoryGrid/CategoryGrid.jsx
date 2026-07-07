@@ -27,8 +27,8 @@ function CategoryGrid(){
                 <h1>COMPRE POR MODALIDADE</h1>
             </div>
             <div className="category-bottom-content">
-                {imagensCategoria.map((imagem) => (
-                    <CardCategory product={imagem.product} src={imagem.src} text={imagem.text}/>
+                {imagensCategoria.map((imagem, index) => (
+                    <CardCategory key={index} product={imagem.product} src={imagem.src} text={imagem.text}/>
                 ))
                 }
             </div>

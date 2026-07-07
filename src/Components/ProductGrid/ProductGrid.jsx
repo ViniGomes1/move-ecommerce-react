@@ -44,14 +44,30 @@ function ProductGrid() {
     const [estaPorCima, setEstaPorCima] = useState(false);
 
     const cardGridRef = useRef(null);
+    const [reachedEnd, setReachedEnd] = useState(false);
 
     useEffect(() => {
         const container = cardGridRef.current;
         if (!container) return;
 
-        const handleWheel = (evento) => {
-            evento.preventDefault();
-            container.scrollLeft += evento.deltaY;
+        const handleWheel = (e) => {
+            const { scrollRight, scrollLeft, scrollWidth, clientWidth } = container;
+
+            const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 1;
+            const isAtStart = scrollLeft <= 0;
+            setReachedEnd(isAtEnd);
+
+            if (e.deltaY > 0 && !isAtEnd) {
+                e.preventDefault();
+                container.scrollLeft += e.deltaY;
+                return;
+            }
+
+            if (e.deltaY < 0 && !isAtStart) {
+                e.preventDefault();
+                container.scrollLeft += e.deltaY;
+                return;
+            }
         };
 
         container.addEventListener('wheel', handleWheel, { passive: false });
