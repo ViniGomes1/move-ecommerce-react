@@ -1,5 +1,6 @@
 import "./Baseboard.css"
 import logo from '../../assets/Logos/logo - move .svg';
+import { Link } from 'react-router-dom';
 
 function Baseboard() {
     return (
@@ -25,6 +26,7 @@ function Baseboard() {
                 <div className="baseboard-rigt-container">
                     <p>AJUDA</p>
                     <ul>
+                        <li><Link to={"/about"}>Sobre nós</Link></li>
                         <li>SAC</li>
                         <li>Transporte</li>
                         <li>Opções de pagamento</li>

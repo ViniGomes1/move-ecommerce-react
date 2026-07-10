@@ -21,7 +21,7 @@ function FilterButton({ nameContent, listFilter }) {
                 <ul className="list-wrapper">
                     {listFilter.map((item, index) => {
                         return (
-                            <div className="name-list-container">
+                            <div key={index} className="name-list-container">
                                 <label className="container-check">
                                     <input type="checkbox" />
                                     <span className="checkmark"></span>

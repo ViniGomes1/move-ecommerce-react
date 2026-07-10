@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 const navbarLinks = {
   shop: {to: "/shop"},
   home: {to: "/"},
-  events: {to: "/events"}
+  events: {to: "/events"},
+  account: {to: "/account"}
 }
 
 function NavBar() {
@@ -24,7 +25,7 @@ function NavBar() {
           <li><Link to={navbarLinks.events.to}>EVENTOS</Link></li>
         </ul>
         <ul className="nav-logos">
-          <li><a href=""><img src={person}/></a></li>
+          <li><Link to={navbarLinks.account.to}><img src={person}/></Link></li>
           <li><a href=""><img src={magnifier}/></a></li>
           <li><a href=""><img src={bagfill}/></a></li>
         </ul>

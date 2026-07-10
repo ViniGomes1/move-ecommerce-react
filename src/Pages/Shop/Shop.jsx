@@ -1,9 +1,9 @@
-import SideBar from "../../Components/SideBar/SideBar"
 //import ContentRoll from "../../Components/ContentRoll/ContentRoll"
 import ShopEnviroment from "../../Components/ShopEnviroment/ShopEnviroment"
 import "./Shop.css"
 import GridShopProducts from "../../Components/GridShopProducts/GridShopProducts"
 import { useState } from "react"
+import SideBarShop from "../../Components/SideBarShop/SideBarShop"
 
 function Shop() {
 
@@ -13,7 +13,7 @@ function Shop() {
         <div>
             <ShopEnviroment produtos={quantidade}/>
             <div className="shop-content-container">
-                <SideBar />
+                <SideBarShop />
                 <GridShopProducts onValue={setQuantidade}/>
             </div>
         </div>

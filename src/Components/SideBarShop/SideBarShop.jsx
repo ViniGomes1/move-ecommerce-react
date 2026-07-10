@@ -21,7 +21,7 @@ const filterParams = [
     },
 ]
 
-function SideBar() {
+function SideBarShop() {
 
     return (
         <div className="sidebar-container">
@@ -30,10 +30,10 @@ function SideBar() {
                 <ul className="filter-list">
                     {filterParams.map((filter, index) => {
                         return (
-                            <>
+                            <div key={index}>
                                 <li><FilterButton nameContent={filter.nameContent} listFilter={filter.filterList}/></li>
                                 <hr />
-                            </>
+                            </div>
                         )
                     })}
 
@@ -43,4 +43,4 @@ function SideBar() {
     )
 }
 
-export default SideBar
+export default SideBarShop

@@ -61,7 +61,7 @@ function GridShopProducts({ onValue }) {
         <div className="grid-shop-container-products">
             {gridProducts.map((imagem, index) => {
                 return (
-                    <CardProduct productImage={imagem.src} price={imagem.price} productName={imagem.name} amostra={false}/>
+                    <CardProduct key={index} productImage={imagem.src} price={imagem.price} productName={imagem.name} amostra={false}/>
                 )
             })}
         </div>

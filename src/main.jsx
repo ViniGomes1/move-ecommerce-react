@@ -7,6 +7,8 @@ import Home from './Pages/Home/home.jsx'
 import Shop from './Pages/Shop/Shop.jsx'
 import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx'
 import Events from './Pages/Events/Events.jsx'
+import AboutPage from './Pages/AboutPage/AboutPage.jsx'
+import AccountPage from './Pages/AccountPage/AccountPage.jsx'
 //import RouterPages from './RouterPages.jsx'
 
 
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: "/events",
         element: <Events />
+      },
+      {
+        path: "/about",
+        element: <AboutPage />
+      },
+      {
+        path: "/account",
+        element: <AccountPage />
       }
     ]
   }
