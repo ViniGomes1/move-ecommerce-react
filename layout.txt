@@ -2,6 +2,8 @@ Tela Inicial
 Cor de Fundo: #DAE1DE 
 Cor dos textos: #15342d
 
+nova cor: #fff9dd
+
 inspirações a eventos:
 https://www.aloyoga.com.br/
 https://satisfyrunning.com/

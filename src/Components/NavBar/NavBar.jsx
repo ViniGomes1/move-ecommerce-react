@@ -1,5 +1,5 @@
 import './NavBar.css'
-import logo from '../../assets/Logos/logo - move .svg';
+import Logo from  '../../assets/Logos/gemini-svg.svg?react';
 import person from '../../assets/Logos/person.svg'
 import magnifier from '../../assets/Logos/magnifier.svg'
 import bagfill from '../../assets/Logos/bag-fill.svg'
@@ -16,9 +16,9 @@ function NavBar() {
   return (
     <nav className='navbar'>
       <div className='navbarcontent'>
-        <Link to={navbarLinks.home.to} className="logo">
-          <img src={logo} />
-          <p>MOVE Co.</p>
+        <Link to={navbarLinks.home.to} className=" flex flex-row items-center " >
+          <Logo className='size-[40px] text-[#15342d] pr-[10px]'/>
+          <p className="text-[#15342d] text-[19px] font-[700] font-['Ibarra_Real_Nova']">MOVE Co.</p>
         </Link>
         <ul className="nav-links">
           <li><Link to={navbarLinks.shop.to}>LOJA</Link></li>
