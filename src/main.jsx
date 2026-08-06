@@ -11,7 +11,6 @@ import AboutPage from './Pages/AboutPage/AboutPage.jsx'
 import AccountPage from './Pages/AccountPage/AccountPage.jsx'
 //import RouterPages from './RouterPages.jsx'
 
-
 const router = createBrowserRouter([
   {
     path: "/",
