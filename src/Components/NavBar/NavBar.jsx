@@ -17,8 +17,8 @@ function NavBar() {
     <nav className='navbar'>
       <div className='navbarcontent'>
         <Link to={navbarLinks.home.to} className=" flex flex-row items-center " >
-          <Logo className='size-[40px] text-[#15342d] pr-[10px]'/>
-          <p className="text-[#15342d] text-[19px] font-[700] font-['Ibarra_Real_Nova']">MOVE Co.</p>
+          <Logo className='size-[40px] text-[#15342d]'/>
+          <p className="text-[#15342d] text-[19px] font-[700] font-['Ibarra_Real_Nova'] pl-[10px]">MOVE Co.</p>
         </Link>
         <ul className="nav-links">
           <li><Link to={navbarLinks.shop.to}>LOJA</Link></li>

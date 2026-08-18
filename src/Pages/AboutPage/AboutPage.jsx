@@ -1,6 +1,8 @@
+import PdfContainer from "../../Components/PdfContainer"
+
 function AboutPage(){
     return(
-        <h1>Sobre</h1>
+        <PdfContainer pdfFile='PDF/Move Espro.pdf'/>
     )
 }
 
