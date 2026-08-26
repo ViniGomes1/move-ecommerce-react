@@ -1,46 +1,32 @@
-import FilterButton from "../FilterButton/FilterButton"
-import "./SideBar.css"
+import './SideBar.css';
+import { categories } from '../../data/products';
 
-const filterParams = [
-    {
-        nameContent: "Departamento",
-        filterList: [
-            { nameFilter: "Roupas Femininas" },
-            { nameFilter: "Roupas Masculinas" }
-        ]
-    },
-    {
-        nameContent: "Categoria",
-        filterList: [
-            { nameFilter: "Blusas" },
-            { nameFilter: "Tops" },
-            { nameFilter: "Legging" },
-            { nameFilter: "Moletom" },
-            { nameFilter: "Shorts" }
-        ]
-    },
-]
+function SideBarShop({ selectedCategory, onCategoryChange }) {
+  return (
+    <aside className="sidebar-container">
+      <div className="sidebar-topcontent">
+        <p>FILTROS</p>
+      </div>
 
-function SideBarShop() {
-
-    return (
-        <div className="sidebar-container">
-            <div className="sidebar-topcontent"><p>FILTROS</p></div>
-            <div className="sidebar-midcontent">
-                <ul className="filter-list">
-                    {filterParams.map((filter, index) => {
-                        return (
-                            <div key={index}>
-                                <li><FilterButton nameContent={filter.nameContent} listFilter={filter.filterList}/></li>
-                                <hr />
-                            </div>
-                        )
-                    })}
-
-                </ul>
-            </div>
-        </div>
-    )
+      <div className="sidebar-midcontent">
+        <ul className="filter-list">
+          {categories.map((category) => (
+            <li key={category} className="filter-item">
+              <button
+                type="button"
+                onClick={() => onCategoryChange(category)}
+                className={`filter-button-option ${
+                  selectedCategory === category ? 'active' : ''
+                }`}
+              >
+                {category}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </aside>
+  );
 }
 
-export default SideBarShop
+export default SideBarShop;

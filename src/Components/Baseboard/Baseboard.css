@@ -1,11 +1,11 @@
 .baseboard-container {
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 70px;
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px 20px 48px;
 }
 
 #baseboard {
@@ -18,14 +18,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 8px;
 }
-
 
 .baseboard-logo h2 {
     color: #15342d;
     text-decoration: none;
     font-size: 19px;
     font-weight: 700;
+    margin: 0;
 }
 
 .baseboard-logo img {
@@ -34,37 +35,77 @@
 }
 
 .baseboard-left-container {
-    width: 500px;
-    height: 100px;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
 }
 
 .baseboard-left-container p {
-    padding-top: 20px;
-    letter-spacing: 2px;
+    padding-top: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #15342d;
 }
 
-.baseboard-middle-container p {
-    font-size: 19px;
+.baseboard-middle-container p,
+.baseboard-rigt-container p {
+    font-size: 17px;
     color: #15342d;
     font-weight: 700;
+    margin: 0;
 }
 
-.baseboard-middle-container li {
-    font-weight: 500;
-}
-
-.baseboard-middle-container ul {
-    padding-top: 20px;
-}
-
-.baseboard-rigt-container p {
-    font-weight: 700;
-}
-
-.baseboard-rigt-container ul {
-    padding-top: 20px;
-}
-
+.baseboard-middle-container li,
 .baseboard-rigt-container li {
     font-weight: 500;
+    list-style: none;
+}
+
+.baseboard-middle-container ul,
+.baseboard-rigt-container ul {
+    padding: 16px 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.baseboard-rigt-container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.baseboard-rigt-container a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .baseboard-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 32px;
+        padding: 32px 28px 56px;
+    }
+
+    .baseboard-left-container {
+        flex: 1 1 280px;
+    }
+
+    .baseboard-middle-container,
+    .baseboard-rigt-container {
+        flex: 0 1 auto;
+        min-width: 140px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .baseboard-container {
+        flex-wrap: nowrap;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 70px;
+    }
 }

@@ -3,9 +3,25 @@
 
 @import "tailwindcss";
 
-Body {
-    font-family: "Bricolage Grotesque";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-body{
-    background-color: #DAE1DE;
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-color: #DAE1DE;
+  margin: 0;
+  overflow-x: clip;
+  min-width: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
