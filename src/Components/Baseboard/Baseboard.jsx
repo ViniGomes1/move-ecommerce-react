@@ -10,7 +10,7 @@ function Baseboard() {
                 
                 <div className="baseboard-left-container">
                     <div className="baseboard-logo">
-                        <img src={logo} />
+                        <img src={logo} alt="MOVE Co." />
                         <h2>MOVE Co.</h2>
                     </div>
                     <p>Desde 2014, a MOVE Co. surgiu como uma alternativa sustentável a aqueles que buscam uma experiência transformadora em esportes.</p>
@@ -18,18 +18,19 @@ function Baseboard() {
                 <div className="baseboard-middle-container">
                     <p>LOJA</p>
                     <ul>
-                        <li>Shorts</li>
-                        <li>Tops</li>
-                        <li>Jaquetas</li>
+                        <li><Link to="/shop">Shop</Link></li>
+                        <li><Link to="/shop?category=Shorts">Shorts</Link></li>
+                        <li><Link to="/shop?category=Camisetas">Top</Link></li>
+                        <li><Link to="/shop?category=Jaquetas">Jaquetas</Link></li>
                     </ul>
                 </div>
                 <div className="baseboard-rigt-container">
                     <p>AJUDA</p>
                     <ul>
-                        <li><Link to={"/about"}>Sobre nós</Link></li>
-                        <li>SAC</li>
-                        <li>Transporte</li>
-                        <li>Opções de pagamento</li>
+                        <li><Link to="/about">Sobre nós</Link></li>
+                        <li><Link to="/sac">SAC</Link></li>
+                        <li><Link to="/transport">Transporte</Link></li>
+                        <li><Link to="/payment">Pagamentos</Link></li>
                     </ul>
                 </div>
             </div>

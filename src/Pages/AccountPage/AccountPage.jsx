@@ -1,12 +1,11 @@
-import Account from "../../Components/Account/Account"
+import Login from '../../Components/Login/Login';
+import Dashboard from '../../Components/Dashboard/Dashboard';
+import { useAuth } from '../../context/AuthContext';
 
+function AccountPage() {
+  const { isAuthenticated } = useAuth();
 
-function AccountPage(){
-    return(
-        <>
-            <Account />
-        </>
-    )
+  return isAuthenticated ? <Dashboard /> : <Login />;
 }
 
-export default AccountPage
+export default AccountPage;

@@ -1,13 +1,15 @@
-import "./ShopEnviroment.css"
+import './ShopEnviroment.css';
 
-function ShopEnviroment({produtos}){
-    return(
-        <div className="shop-container">
-            <h1>ROUPAS NO GERAL</h1>
-            <h3>{produtos} Produtos</h3>
-        </div>
-    )
+function ShopEnviroment({ produtos, categoria = 'Tudo' }) {
+  const title = categoria === 'Tudo' ? 'Todos os produtos' : categoria;
+
+  return (
+    <div className="shop-container">
+      <h1>{title}</h1>
+      <h3>{produtos} Produtos</h3>
+    </div>
+  );
 }
 
-export default ShopEnviroment
+export default ShopEnviroment;
 

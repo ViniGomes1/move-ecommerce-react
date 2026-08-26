@@ -1,0 +1,46 @@
+.event-grid-page {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 16px 32px;
+}
+
+.event-grid-title {
+    margin: 24px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.event-grid-title h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: #15342d;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    margin: 0;
+}
+
+.event-grid-title p {
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    color: #183a33;
+    margin: 0;
+    font-weight: 400;
+}
+
+.event-grid-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 640px) {
+    .event-grid-page {
+        padding: 20px 20px 40px;
+    }
+
+    .event-grid-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

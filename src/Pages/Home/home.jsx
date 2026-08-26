@@ -1,4 +1,3 @@
-import NavBar from "../../Components/NavBar/NavBar"
 import ContentRoll from "../../Components/ContentRoll/ContentRoll"
 import ProductGrid from "../../Components/ProductGrid/ProductGrid"
 import CategoryGrid from "../../Components/CategoryGrid/CategoryGrid"

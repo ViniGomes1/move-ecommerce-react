@@ -1,30 +1,45 @@
-.card-grid {
-    display: flex;
-    overflow: auto;
-    flex-wrap: nowrap;
+.product-grid-container {
+    width: 100%;
+    max-width: 100%;
     overflow: hidden;
 }
 
-.top-title{
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+.card-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 16px 8px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+
+.card-grid .card-container {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.top-title {
+    margin: 24px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.top-title h1{
-    font-size: 40px;
+.top-title h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: 700;
     color: #15342d;
+    text-align: center;
 }
 
 .bottom-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 8px 16px 24px;
 }
 
 .bottom-button div:hover {
@@ -33,8 +48,9 @@
 
 .bottom-button div {
     background-color: #000000;
-    width: 120px;
+    min-width: 120px;
     height: 40px;
+    padding: 0 16px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -46,4 +62,17 @@
     color: aliceblue;
     text-align: center;
     font-weight: 700;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        gap: 16px;
+        padding: 0 24px 12px;
+    }
+
+    .top-title {
+        margin: 30px 24px;
+    }
 }

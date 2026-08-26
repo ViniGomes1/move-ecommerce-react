@@ -1,57 +1,58 @@
-.card-category-container{
+.card-category-container {
     position: relative;
-    margin: 20px;
-    min-width: 350px;
-    min-height: 450px;
+    width: 100%;
+    max-width: 420px;
+    min-height: 360px;
+    aspect-ratio: 3 / 4;
+    margin: 0 auto;
     background-color: black;
-    box-shadow: 5px 5px 15px rgba(78, 86, 89, 0.350);
+    box-shadow: 5px 5px 15px rgba(78, 86, 89, 0.35);
     border-radius: 5px;
     overflow: hidden;
 }
 
-.card-category-container:hover{
-    .category-image{
-        scale: 1.5;
-    }
+.card-category-container:hover .category-image {
+    scale: 1.15;
 }
 
-
-.text-category{
+.text-category {
     position: absolute;
-    width: 100%;
-    height: 450px;
+    inset: 0;
     z-index: 2;
     display: flex;
-    flex-direction: row; /* ou column, se preferir itens empilhados */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 16px;
 }
 
-.text-category h3{
-    
-    font-size: 25px;
+.text-category h3 {
+    font-size: clamp(1.125rem, 3vw, 1.5625rem);
     color: #f0ffff;
     font-weight: 700;
-}
-.text-category h4{
-    margin-bottom: 10px;
-    color: #f0ffff;
+    margin: 0 0 8px;
 }
 
-.text-category button{
+.text-category h4 {
+    margin: 0 0 12px;
+    color: #f0ffff;
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    line-height: 1.4;
+}
+
+.text-category button {
     font-weight: 700;
-    width: 100px;
-    height: 50px;
+    width: min(100px, 40vw);
+    height: 44px;
     color: #000000;
     background-color: azure;
     border-radius: 50px;
-    border-width: 2px;
-    border-color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
 }
 
-.text-category button:hover{
-    cursor: pointer;
+.text-category button:hover {
     background-color: rgba(240, 255, 255, 0);
     color: #ffffff;
 }
@@ -59,12 +60,12 @@
 .card-category-container .image-container {
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 100%;
     overflow: hidden;
     z-index: 1;
 }
 
-.image-container .category-image{
+.image-container .category-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -72,5 +73,16 @@
     top: 0;
     left: 0;
     opacity: 0.5;
-    transition: scale 0.5s ;
+    transition: scale 0.5s;
+}
+
+@media (min-width: 1024px) {
+    .card-category-container {
+        min-height: 420px;
+        max-width: none;
+    }
+
+    .card-category-container:hover .category-image {
+        scale: 1.5;
+    }
 }
