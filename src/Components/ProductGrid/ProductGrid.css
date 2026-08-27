@@ -11,10 +11,12 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding: 0 16px 8px;
-    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
+    overflow: hidden;
 }
+
+
 
 .card-grid .card-container {
     flex: 0 0 auto;

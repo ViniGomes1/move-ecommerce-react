@@ -3,20 +3,20 @@ import "./CategoryGrid.css"
 
 const imagensCategoria = [
     {
-        src: "/Imagens/Category/tenis.jpg",
-        product: "Tênis",
-        text: "Para aqueles que correm em liberdade"
+        src: "/Imagens/Category/Esportes.jpeg",
+        product: "Esportes",
+        text: "Para competidores vorazes"
     },
     {
-        src: "/Imagens/Category/Moletom.jpg",
-        product: "Moletom",
-        text: "Conforto em tempos de frio"
+        src: "/Imagens/Category/Academia.jpeg",
+        product: "Academia",
+        text: "Para aqueles que buscam bem estar"
     }
     ,
     {
         src: "/Imagens/Category/Shorts.jpg",
-        product: "Shorts",
-        text: "Conforto para atividades rápidas"
+        product: "Conforto",
+        text: "Liberdade em suas atividades"
     }
 ] 
 

@@ -1,5 +1,6 @@
 import { Document, Page, pdfjs } from "react-pdf"
 import { useState } from 'react';
+import Logo from  '../../assets/Logos/gemini-svg.svg?react';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
@@ -35,7 +36,7 @@ export default function PdfContainer({ pdfFile }) {
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px' }}>
                 <div>
                     <button onClick={prevPage} disabled={pageNumber <= 1}>
-                        ◀ Anterior
+                        Anterior
                     </button>
                 </div>
 
@@ -46,7 +47,7 @@ export default function PdfContainer({ pdfFile }) {
                 </div>
                 
                 <button onClick={nextPage} disabled={pageNumber >= numPages}>
-                    Próxima ▶
+                    Próxima
                 </button>
             </div>
         </div>

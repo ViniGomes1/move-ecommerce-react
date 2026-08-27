@@ -55,6 +55,7 @@ function ProductGrid() {
 
             const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 1;
             const isAtStart = scrollLeft <= 0;
+            
             setReachedEnd(isAtEnd);
 
             if (e.deltaY > 0 && !isAtEnd) {
