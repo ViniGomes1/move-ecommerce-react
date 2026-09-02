@@ -9,7 +9,7 @@ function Home() {
 
     const imagens = [
         "/Imagens/Carrossel/cara com corda.jpg",
-        "/Imagens/Carrossel/academia.jpg",
+        "/Imagens/Carrossel/move musa.jpeg",
         "/Imagens/Carrossel/imagem-base.jpg"
     ]
 
