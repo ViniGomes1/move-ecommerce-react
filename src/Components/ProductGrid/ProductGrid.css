@@ -13,7 +13,7 @@
     padding: 0 16px 8px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    overflow: hidden;
+    scroll-snap-type: x mandatory;
 }
 
 

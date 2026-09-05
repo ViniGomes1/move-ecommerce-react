@@ -4,31 +4,31 @@ import CardProduct from "../CardProduct/CardProduct";
 
 const imagensGrid = [
     {
-        product: "/Imagens/grid/Dunk/01708551A2.avif",
-        image: "/Imagens/grid/Dunk/01708551A3.jpeg",
+        product: "/Imagens/novas/top 1.jpeg",
+        image: "/Imagens/novas/treino 1.jpeg",
         price: "299",
         name: "Tênis"
     },
     {
-        product: "/Imagens/grid/Camisa/Modelo.jpeg",
-        image: "/Imagens/grid/Camisa/persona.avif",
+        product: "/Imagens/novas/treino 2.jpeg",
+        image: "/Imagens/novas/treino 1.jpeg",
         price: "299",
         name: "Camisa do Brasil"
     },
     {
-        product: "/Imagens/grid/Camisa Branca/modelo.avif",
+        product: "/Imagens/novas/yoga 2.jpeg",
         image: "/Imagens/grid/Camisa Branca/persona.avif",
         price: "299",
         name: "Camisa Branca"
     },
     {
-        product: "/Imagens/grid/mochila/modelo.avif",
+        product: "/Imagens/novas/yoga 3.jpeg",
         image: "/Imagens/grid/mochila/persona.avif",
         price: "299",
         name: "Mochila"
     },
     {
-        product: "/Imagens/grid/Boné/produto.webp",
+        product: "/Imagens/novas/yoga 4.jpeg",
         image: "/Imagens/grid/Boné/persona.webp",
         price: "399",
         name: "Viseira"
@@ -93,6 +93,7 @@ function ProductGrid() {
                             hoverImg={imagem.image}
                             price={imagem.price}
                             productName={imagem.name}
+                            amostra={false}
                         />
                     )
                 })}
