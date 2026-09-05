@@ -7,31 +7,31 @@ const imagensGrid = [
         product: "/Imagens/novas/top 1.jpeg",
         image: "/Imagens/novas/treino 1.jpeg",
         price: "299",
-        name: "Tênis"
+        name: "Top"
     },
     {
         product: "/Imagens/novas/treino 2.jpeg",
         image: "/Imagens/novas/treino 1.jpeg",
-        price: "299",
-        name: "Camisa do Brasil"
+        price: "399",
+        name: "Kit Academia"
     },
     {
         product: "/Imagens/novas/yoga 2.jpeg",
         image: "/Imagens/grid/Camisa Branca/persona.avif",
-        price: "299",
-        name: "Camisa Branca"
+        price: "450",
+        name: "Kit Yoga"
     },
     {
         product: "/Imagens/novas/yoga 3.jpeg",
         image: "/Imagens/grid/mochila/persona.avif",
         price: "299",
-        name: "Mochila"
+        name: "Legging"
     },
     {
         product: "/Imagens/novas/yoga 4.jpeg",
         image: "/Imagens/grid/Boné/persona.webp",
         price: "399",
-        name: "Viseira"
+        name: "Calça"
     }
 ]
 
